@@ -143,3 +143,15 @@ MODIFY COLUMN `date` date;
 
 SELECT *
 FROM layoffs_staging2; 
+
+SELECT *
+FROM layoffs_staging2
+WHERE total_laid_off IS NULL 
+AND percentage_laid_off IS NULL;
+
+SELECT * 
+FROM layoffs_staging2
+WHERE industry IS NULL 
+OR industry = ''
+
+
